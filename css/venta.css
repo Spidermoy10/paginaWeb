@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+
+#ventas .venta {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-family: 'Lato', sans-serif;
+}
+
+#ventas article{
+	margin: 15px;
+}
+
+#ventas article{
+	width: 200px;
+	height: -90px;
+	max-width: 250px;
+	overflow: hidden;
+	border-radius: 6px;
+	box-shadow: 0px 1px 10px;
+	cursor: pointer;
+	margin-top: 50px;
+}
+
+#ventas img{
+	width: 100%;
+	height: 100%;
+}
+
+ article:hover > a img{
+	transform: scale(1.1);
+	transition: all 500ms ease-out;
+}
+
+.venta .descripcion {
+	position: absolute;
+	top: 860px;
+	width: 15.6%;
+	height: 47%;
+	background: rgba(11, 103, 123, 0.6);
+	transition: all 500ms ease-out;
+	opacity: 0;
+	visibility: hidden;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+
+.venta article:hover > a .descripcion{
+	opacity: 1;
+	visibility: visible;
+}
+
+#ventas .venta article .descripcion h3, h4 {
+	color: white;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 20px;
+}
